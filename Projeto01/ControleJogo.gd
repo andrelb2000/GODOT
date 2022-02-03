@@ -4,8 +4,8 @@ extends Node2D
 # Declare member variables here. Examples:
 var x = 1
 var d = 0
-var novoIcone 
-var iconeBase
+var novoIcone = 0
+var iconeBase = 0
 # var b = "text"
 
 
