@@ -20,7 +20,7 @@ func _ready():
 func _process(delta):
 	$Sprite.move_local_x(x)
 	d += 1
-	if (d%7)==0:
+	if ( ((d%7)>=0) and ((d%7)<7) )   :
 		$Sprite.texture = novoIcone
 	else:
 		$Sprite.texture = iconeBase
