@@ -8,6 +8,9 @@ var dy = 0
 var dx = 0
 var novoIcone = 0
 var iconeBase = 0
+
+
+
 # var b = "text"
 
 
