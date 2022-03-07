@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://CodigoPersonagem.gd" type="Script" id=1]
+[ext_resource path="res://sprite_sheet.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=2]
+resource_name = "Andar_Direita"
+length = 0.9
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 143, 144, 145, 146, 147, 148, 149, 150, 151 ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 143 ]
+}
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 5.0
+
+[node name="KinematicBody2D - Jogador" type="KinematicBody2D"]
+position = Vector2( 48, 47 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite - Personagem" type="Sprite" parent="."]
+position = Vector2( 0, -16 )
+scale = Vector2( 0.593749, 0.593749 )
+texture = ExtResource( 2 )
+hframes = 13
+vframes = 21
+frame = 143
+
+[node name="AnimationPlayer - Animação" type="AnimationPlayer" parent="Sprite - Personagem"]
+anims/Andar_Direita = SubResource( 2 )
+anims/RESET = SubResource( 3 )
+
+[node name="CollisionShape2D - Colisor Personagem" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -3 )
+shape = SubResource( 4 )
