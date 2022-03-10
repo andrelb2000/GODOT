@@ -1,0 +1,113 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ControleMaster.gd" type="Script" id=4]
+
+[node name="MainVisual" type="Node2D"]
+position = Vector2( 22, 43 )
+script = ExtResource( 4 )
+
+[node name="Iniciar" type="Button" parent="."]
+margin_left = 210.0
+margin_top = 135.0
+margin_right = 594.0
+margin_bottom = 176.0
+rect_pivot_offset = Vector2( -462, -160 )
+text = "CALCULAR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Voltar" type="Button" parent="."]
+margin_left = 331.0
+margin_top = 198.0
+margin_right = 459.0
+margin_bottom = 244.0
+rect_pivot_offset = Vector2( -462, -160 )
+custom_colors/font_color_disabled = Color( 1, 0.027451, 0.176471, 1 )
+custom_colors/font_color = Color( 0.266667, 1, 0, 1 )
+text = "VOLTAR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nota1" type="LineEdit" parent="."]
+margin_left = 103.0
+margin_top = 9.0
+margin_right = 167.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nota2" type="LineEdit" parent="."]
+margin_left = 103.0
+margin_top = 44.0
+margin_right = 167.0
+margin_bottom = 74.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nota3" type="LineEdit" parent="."]
+margin_left = 103.0
+margin_top = 83.0
+margin_right = 167.0
+margin_bottom = 113.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="labelNota1" type="Label" parent="."]
+margin_left = 25.0
+margin_top = 17.0
+margin_right = 101.0
+margin_bottom = 39.0
+text = "Nota1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="labelNota2" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 53.0
+margin_right = 98.0
+margin_bottom = 70.0
+text = "Nota 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="labelNota3" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 92.0
+margin_right = 98.0
+margin_bottom = 109.0
+text = "Nota 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 208.0
+margin_top = 5.0
+margin_right = 595.0
+margin_bottom = 117.0
+color = Color( 0.572549, 0.0627451, 0.603922, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Saida" type="Label" parent="."]
+margin_left = 218.0
+margin_top = 12.0
+margin_right = 587.0
+margin_bottom = 109.0
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Iniciar" to="." method="_on_Iniciar_pressed"]
+[connection signal="pressed" from="Voltar" to="." method="_on_Voltar_pressed"]
+[connection signal="pressed" from="Voltar" to="." method="_on_Iniciar_pressed"]
