@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Yoda.jpg" type="Texture" id=1]
+[ext_resource path="res://Space.jpg" type="Texture" id=2]
+[ext_resource path="res://Node2D.gd" type="Script" id=3]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Space" type="Sprite" parent="."]
+position = Vector2( 400.5, 302.25 )
+scale = Vector2( 1.4273, 1.87224 )
+texture = ExtResource( 2 )
+
+[node name="Yoda" type="Sprite" parent="Space"]
+position = Vector2( -8.0571, -46.602 )
+scale = Vector2( 0.695284, 0.548269 )
+texture = ExtResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Space"]
+margin_left = -270.0
+margin_top = 28.0
+margin_right = -87.0
+margin_bottom = 62.0
+rect_scale = Vector2( 3, 3 )
+text = "     Muito bom
+Com você que a força esteja"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonBack" type="Button" parent="Space"]
+margin_left = 139.854
+margin_top = -55.8401
+margin_right = 237.854
+margin_bottom = -35.8401
+text = "Voltar ao Jogo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelPontos" type="Label" parent="Space"]
+margin_left = -260.0
+margin_top = -148.0
+margin_right = -143.0
+margin_bottom = -134.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelCategoria" type="Label" parent="Space"]
+margin_left = 18.5665
+margin_top = 26.5725
+margin_right = 98.5665
+margin_bottom = 40.5725
+rect_scale = Vector2( 3, 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Space/ButtonBack" to="." method="_on_ButtonBack_pressed"]
