@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://XWing.png" type="Texture" id=1]
+[ext_resource path="res://XWing2.png" type="Texture" id=1]
 [ext_resource path="res://SpriteNave.gd" type="Script" id=2]
 [ext_resource path="res://Node2DNave.gd" type="Script" id=3]
 
@@ -8,7 +8,7 @@
 script = ExtResource( 3 )
 
 [node name="SpriteNave" type="Sprite" parent="."]
-position = Vector2( 262, 198 )
-scale = Vector2( 0.579208, 0.563291 )
+position = Vector2( 457, 260 )
+scale = Vector2( 0.418914, 0.372791 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )

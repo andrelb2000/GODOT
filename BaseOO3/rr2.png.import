@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/XWing.png-05866e0399a4ae7820dc3554779c09df.stex"
+path="res://.import/rr2.png-f8324031cd24e8f9f6430dd973e4a28c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://XWing.png"
-dest_files=[ "res://.import/XWing.png-05866e0399a4ae7820dc3554779c09df.stex" ]
+source_file="res://rr2.png"
+dest_files=[ "res://.import/rr2.png-f8324031cd24e8f9f6430dd973e4a28c.stex" ]
 
 [params]
 
