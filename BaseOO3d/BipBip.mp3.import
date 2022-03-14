@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BipBip.mp3-2b98596d721ca7981fcdfd27833d3538.mp3str"
+
+[deps]
+
+source_file="res://BipBip.mp3"
+dest_files=[ "res://.import/BipBip.mp3-2b98596d721ca7981fcdfd27833d3538.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
