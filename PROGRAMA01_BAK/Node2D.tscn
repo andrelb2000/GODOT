@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+[ext_resource path="res://ant-man-png-27430.png" type="Texture" id=2]
+[ext_resource path="res://5aa294880ba120a91c3ccdc06a1e821b.jpg" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="CEREBRO" type="Sprite" parent="."]
+position = Vector2( 1601, 503 )
+scale = Vector2( 1.15157, 1.15154 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 371, 501 )
+scale = Vector2( 0.595557, 0.484472 )
+texture = ExtResource( 2 )
