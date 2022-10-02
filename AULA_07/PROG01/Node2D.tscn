@@ -9,7 +9,6 @@ script = ExtResource( 3 )
 
 [node name="SpriteCEREBRO" type="Sprite" parent="."]
 position = Vector2( 1553, 489 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 2 )
 
 [node name="SpriteANT" type="Sprite" parent="."]
