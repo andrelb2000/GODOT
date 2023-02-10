@@ -31,6 +31,7 @@ func _physics_process(delta):
 		pass
 	#Comando para mover e detectar colisões	
 	move_and_slide(vetor_movimento*velocidade)
+	this.
 	
 #Função que detecta a entrada na porta da Casa Topo
 #Configurado na aba NODE (ao lado de Inspector)
