@@ -1,0 +1,8 @@
+if( ($AntMan.global_position.x > ($Cerebro.global_position.x-20) )  and  
+		($AntMan.global_position.x < ($Cerebro.global_position.x+20) )  and
+		($AntMan.global_position.y > ($Cerebro.global_position.y-20) )  and  
+		($AntMan.global_position.y < ($Cerebro.global_position.x+20) )  ):
+		$Label.text = "ENTROU!!!!"
+else:
+		$AntMan.move_local_x(2)
+		$AntMan.scale = $AntMan.scale * 0.996
